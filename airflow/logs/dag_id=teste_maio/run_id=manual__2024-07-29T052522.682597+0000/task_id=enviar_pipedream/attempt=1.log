@@ -1,0 +1,19 @@
+[2024-07-29T05:25:26.849+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-07-29T05:25:26.881+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: teste_maio.enviar_pipedream manual__2024-07-29T05:25:22.682597+00:00 [queued]>
+[2024-07-29T05:25:26.889+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: teste_maio.enviar_pipedream manual__2024-07-29T05:25:22.682597+00:00 [queued]>
+[2024-07-29T05:25:26.889+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-07-29T05:25:27.041+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): enviar_pipedream> on 2024-07-29 05:25:22.682597+00:00
+[2024-07-29T05:25:27.045+0000] {standard_task_runner.py:64} INFO - Started process 389 to run task
+[2024-07-29T05:25:27.047+0000] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'teste_maio', 'enviar_pipedream', 'manual__2024-07-29T05:25:22.682597+00:00', '--job-id', '12', '--raw', '--subdir', 'DAGS_FOLDER/maio_dag.py', '--cfg-path', '/tmp/tmp6_uxx1ng']
+[2024-07-29T05:25:27.049+0000] {standard_task_runner.py:91} INFO - Job 12: Subtask enviar_pipedream
+[2024-07-29T05:25:27.189+0000] {task_command.py:426} INFO - Running <TaskInstance: teste_maio.enviar_pipedream manual__2024-07-29T05:25:22.682597+00:00 [running]> on host e58db608bc3e
+[2024-07-29T05:25:27.550+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='Levy Py' AIRFLOW_CTX_DAG_ID='teste_maio' AIRFLOW_CTX_TASK_ID='enviar_pipedream' AIRFLOW_CTX_EXECUTION_DATE='2024-07-29T05:25:22.682597+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-07-29T05:25:22.682597+00:00'
+[2024-07-29T05:25:27.551+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-07-29T05:25:49.018+0000] {logging_mixin.py:188} INFO - <p><b>Success!</b></p>
+<p>To customize this response, check out our docs <a href="https://pipedream.com/docs/workflows/steps/triggers/#customizing-the-http-response">here</a></p>
+[2024-07-29T05:25:49.018+0000] {python.py:237} INFO - Done. Returned value was: None
+[2024-07-29T05:25:49.019+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-07-29T05:25:49.027+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=teste_maio, task_id=enviar_pipedream, run_id=manual__2024-07-29T05:25:22.682597+00:00, execution_date=20240729T052522, start_date=20240729T052526, end_date=20240729T052549
+[2024-07-29T05:25:49.200+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2024-07-29T05:25:49.214+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-07-29T05:25:49.215+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
