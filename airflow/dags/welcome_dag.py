@@ -48,4 +48,4 @@ dummy_operator = DummyOperator(
 
 # Set the dependencies between the tasks
 
-print_welcome_task >> print_date_task >> print_last_update >> dummy_operator
+print_welcome_task >> [print_date_task >> print_last_update] >> dummy_operator
